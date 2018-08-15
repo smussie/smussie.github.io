@@ -1,0 +1,51 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 75% georgia, sans-serif;
+  line-height: 1.888889;
+  color: #555753;
+  background: #fff url(./image/blossoms.jpg) no-repeat bottom right;
+  margin: 0;
+  padding: 0;
+  /* height: 100%; */
+}
+a {
+  color: #00d1b2;
+}
+
+a:hover {
+  color: #00d1b2;
+}
+#pageHeader {
+  padding: inherit;
+  background-color: #ff0;
+  align-content: center;
+}
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#header h1.mainHeading{
+/*  background: #ff0; */
+  font-size:2em;
+  font-color: #86ab76;
+  text-align: center;
+}
+
+#body {
+  padding: 10px;
+  padding-bottom: 60px; /* Height of the footer */
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #6cf;
+}
