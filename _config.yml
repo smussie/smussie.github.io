@@ -1,4 +1,33 @@
-name:
-markdown: 
-
+name: smussie
+github_username: smussie
+title: testingsite.com
 theme: jekyll-theme-hacker
+url: "https://smussie.github.io"
+
+
+collections:
+  pages:
+    output: true
+    permalink: /:path
+
+#defaults:
+#  -
+#    scope:
+#      path: "" # an empty string here means all files in the project
+#      type: "posts" # previously `post` in Jekyll 2.2. #pages, posts, drafts as type is optional the value for path must be specified
+#    values:
+#      layout: "default" #eg my-site
+#  -
+#    scope:
+#      path: "projects" #any docs in the project/ folder will use the project layout
+#      type: "pages" # previously `page` in Jekyll 2.2.
+#    values:
+#      layout: "project" # overrides previous default layout
+#      author: "Mr. Hyde" #the also get page.author liquid variable to Mr. Hyde
+
+#Build settings
+#markdown: kramdown
+#theme: minima
+#plugins:
+#  - jekyll-theme-hacker
+#https://jekyllrb.com/docs/configuration/
