@@ -1,6 +1,7 @@
 name: smussie
 github_username: smussie
 title: testingsite.com
+description: A testing site for jekyll
 theme: jekyll-theme-hacker
 url: "https://smussie.github.io"
 
