@@ -3,7 +3,7 @@
     <!--Navbar-->
 
     <nav class="navbar navbar-expand-lg navbar-dark indigo navbar-header"><!--navbar-fixed-top to make it fixed -->
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="Icon Icon--logo Icon--large" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo/lovely-penguin.jpg" alt="Logo"  width="60" height="70"></a>
       <!-- Collapse button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -16,27 +16,31 @@
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                  <a class="nav-link" href="/">Home
+                  <a class="nav-link" href="{{ site.baseurl }}/">Home
                       <span class="sr-only">(current)</span>
                   </a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="/features">Features</a>
+                  <a class="nav-link" href="{{ site.baseurl }}/features">Notes</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="/pricing">Pricing</a>
+                  <a class="nav-link" href="{{ site.baseurl }}/pricing">my blog</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
+                  <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
               </li>
 
               <!-- Dropdown -->
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                   <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="/action">Action</a>
+                      <a class="dropdown-item" href="{{ site.baseurl }}/WebCv">MonCV</a>
                       <a class="dropdown-item nav-link" href="/rss">rss</a>
-                      <a class="dropdown-item" href="/more">Something else here</a>
+                      <a class="dropdown-item" href="WebCv/compétences">Compétences</a>
+                      <a class="dropdown-item" href="WebCv/experciences">Experiences</a>
+                      <a class="dropdown-item" href="WebCv/formations">Formations</a>
+                      <a class="dropdown-item" href="WebCv/hobbies">Hobbies</a>
+                      <a class="dropdown-item" href="WebCv/contact">Contact</a>
                   </div>
               </li>
 
@@ -56,52 +60,4 @@
           </form>
       </div>
 
-  <!-- Collapsible content -->
-
-    </nav>
-    <!--/.Navbar-->
-    <!-- Coursel slide -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image: url(/home/smussie/My_Git/smussie.github.io/images/1.jpg)">
-          <img class="d-block w-100" src="./images/1.jpg" alt="First slide">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>First slide</h3>
-            <p>Where it all began.</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url(../../../images/2.jpg)">
-        <!--  <img class="d-block w-100" src="./images/2.jpeg" alt="Second slide"> -->
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Second slide</h3>
-            <p>How is it so far?</p>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image: url(../../../images/3.jpg)">
-        <!--  <img class="d-block w-100" src="./images/3.jpg" alt="Third slide"> -->
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Third slide</h3>
-            <p>Nothing to explaine</p>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      <!--  <span class="glyphicon glyphicon-chevron-left"></span> -->
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    <!--    <span class="glyphicon glyphicon-chevron-right"></span> -->
-      </a>
-    </div>
-    <!-- /Coursel slide -->
 </header>

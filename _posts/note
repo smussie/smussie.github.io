@@ -7,3 +7,4 @@ Including an image asset in a post:
 Linking to a PDF for readers to download:
 	... you can [get the PDF]({{ "/assets/mydoc.pdf" | absolute_url }}) directly.
 
+YEAR-MONTH-DAY-title.MARKUP

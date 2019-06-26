@@ -1,8 +1,8 @@
 # Jekyll guide
 
-This is a simple example package. You can use
-[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
-to write your content.
+
+[Jekyll tutorials](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
+
 
 ## Requirements:
 - [x] Ruby > 2.2.5(ruby -v), rubygems (gem -v) , GCC
@@ -52,3 +52,11 @@ to write your content.
 	bundle update github-pages or simply bundle update
 	if no bundler then:
 		gem update github-pages
+
+#Miscellanious
+ #to get gem information
+ bundle info jekyll
+ bundle show --paths
+ gem which jekyll
+ gem list
+ gem help commands

@@ -1,11 +1,24 @@
+# global settings
 name: smussie
 github_username: smussie
-title: testingsite.com
-description: A testing site for jekyll
-theme: jekyll-theme-hacker
+title: "My github page"
+description: >- #this means ignore newlines until "baseurl:"
+  A testing site for jekyll, and WebCv
+#permalink: "/:title"
+#theme: jekyll-theme-hacker
 url: "https://smussie.github.io"
+#relative_permalinks: false
 
-
+# build settings
+#exclude: ["script", "vendor", "Gemfile", "Gemfile.lock", "Rakefile", "readme.md", "Jekyll guide.md"]
+#markdown: kramdown
+#plugins:
+#  - jekyll-avatar
+#  - jekyll-redirect-form
+#  - jekyll-seo-tag
+#  - jekyll-coffescript
+#  - jekyll-sitemap
+#  - jekyll-octicons
 collections:
   pages:
     output: true
