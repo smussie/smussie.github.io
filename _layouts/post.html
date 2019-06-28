@@ -5,7 +5,7 @@ notes: active
 
 <div class="notes">
 		<div class="note single">
-			<h1 class="title">{{ page.title }}</h1>
+			<a href="{{ page.url }}"><h1 class="title">{{ page.title }}</h1></a>
 
 			<h2 class="date"><info datetime="{{ page.date }}">
 				{{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
@@ -23,7 +23,14 @@ notes: active
 
 			<!-- Post comments -->
 			<div class="notecomments">
-				
+
 			</div>
+			<!--
+			<div id="disqus">
+    		<div id="disqus_thread">
+				</div><script type="text/javascript" src="http://disqus.com/forums/git-ready/embed.js"></script>
+				<noscript><a href="http://git-ready.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+				<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  		</div> -->
 		</div><!-- / .note .single -->
 </div><!-- /.notes -->
