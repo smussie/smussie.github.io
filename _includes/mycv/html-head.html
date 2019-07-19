@@ -6,6 +6,11 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% if page.url == "{{ site.baseurl }}/404.html" %}
+		<!--<link rel="stylesheet" href="{{ site.baseurl }}/css/error_page.css" type="text/css" />-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<meta http-equiv="refresh" content="5; url={{ site.baseurl }}">
+	{% endif %}
 	<link href='https://smussie.github.io/feed.xml' rel='alternate' type='application/atom+xml'>
 	<link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/images/favicon/favicon.ico"/>
   <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap/bootstrap.css" media="screen" type="text/css">

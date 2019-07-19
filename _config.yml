@@ -5,6 +5,7 @@ title: "My github page"
 description: >- #this means ignore newlines until "baseurl:"
   A testing site for jekyll, and WebCv
 #permalink: "/:title"
+permalink: pretty
 #theme: jekyll-theme-hacker
 url: "https://smussie.github.io"
 #relative_permalinks: false

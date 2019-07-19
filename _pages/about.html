@@ -17,9 +17,12 @@ custom_js: about.css
 		</div>
 	</div>
 </div>
-
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/asciinema-player.css" />
 <div class="section">
 	<div class="Grid container">
-		<p>This page is supposed to tell you a little more about me or about this page</p>
+		<p>This page is supposed to tell you a little more about me as if you haven't got enough already.</p>
 	</div>
+	<!--<link rel="alternate" type="application/x-asciicast" href="/images/demo.cast"> in page’s HTML):-->
+	<asciinema-player src="{{ site.baseurl }}/images/demo.cast" cols="80" rows="24"></asciinema-player>
+	<script src="{{ site.baseurl }}/js/asciinema-player.js"></script>
 </div>

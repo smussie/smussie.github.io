@@ -3,6 +3,10 @@
 #6acce2 : light blue
 #2c566a : teal accent
 #193742 : dark blue
+#3C6478 : lighter Indigo
+#107896 : "darkest alice" on lilia #7c76a3
+#093145 : darkest indigo lila on darkest indigo
+#C02F1D : rubby
 #e1d8b9 : sand accent
 #cb7d20 : orange accent
 #51341a : brown
@@ -15,44 +19,54 @@ html, body {
   margin: 0;
   padding: 0;
 }
+header, #navbar-header {
+  /*padding: inherit;*/
+  width: 100%;
+  height: 20%;
+  color: #7c76a3;
+  position: sticky; /* fixed */
+  background-color: #093145; /* #ff0;*/
+  align-content: center;
+}
 
 body {
+  /*padding-top: 10px;*/
   font: 75% georgia, sans-serif;
   font: 100% georgia, "Times New Roman", times, serif;
-   line-height: 1.888889;
-     color: #555753;
-  background: #193742 url(./image/blossoms.jpg) no-repeat bottom right;
-  background: linear-gradient(black, white) no-repeat;
- /*background: radial-gradient(circle, green, white) no-repeat; /*we can do multiple gradiants on top of eachother*/
+  line-height: 1.888889;
+  /*color: #555753;*/
+  color: #107896;
+  background: #f8f8ff url(./image/blossoms.jpg) no-repeat bottom right;
+
+  /*background: linear-gradient(#6acce2, white) no-repeat;
+  background: radial-gradient(circle,#6acce2 , #2c566a) no-repeat; /*we can do multiple gradiants on top of eachother*/
 
   /* height: 100%; */
 }
+/*
 a {
   color: #00d1b2;
 }
-
+*/
 a:hover {
   color: #00d1b2;
-}
-#pageHeader {
-  padding: inherit;
-  background-color: #ff0;
-  align-content: center;
+  font-weight: bold;
 }
 #container {
   min-height: 100%;
   position: relative;
 }
 
-header {
-  height: 20%;
-}
-
 #body {
-  padding: 10px;
   padding-bottom: 60px; /* Height of the footer */
 }
 
+#landing_img{
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  overflow: hidden;
+}
 .shape {
   transition: shape-outside 2s ease-in-out; /*this is to animate the text */
   float:left;
@@ -69,11 +83,16 @@ header {
 .tirangle-man {
   shape-outside: polygon(0 0, 0 100%, 50% 100%, 0 0);/*elipse(200px 200px at 0 300px);*/
 }
-footer {
-  /*position: absolute;*/
+
+#sticky {
+  padding-top: 20px;
   text-align: center;
+  color: white;
+  position: absolute;
   bottom: 0;
   width: 100%;
   height: 60px;
-  background: linear-gradient( 0deg, black, lightblue 50%, white ) no-repeat;
+  background-color: #093145;
+  /*
+  background: linear-gradient( 0deg, black, lightblue 50%, white ) no-repeat;*/
 }
