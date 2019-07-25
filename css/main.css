@@ -36,10 +36,9 @@ body {
   line-height: 1.888889;
   /*color: #555753;*/
   color: #107896;
-  background: #f8f8ff url(./image/blossoms.jpg) no-repeat bottom right;
-
-  /*background: linear-gradient(#6acce2, white) no-repeat;
-  background: radial-gradient(circle,#6acce2 , #2c566a) no-repeat; /*we can do multiple gradiants on top of eachother*/
+  /*background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);*/
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  /*background: radial-gradient(circle,#6acce2 , #2c566a) no-repeat; /*we can do multiple gradiants on top of eachother*/
 
   /* height: 100%; */
 }
@@ -48,10 +47,60 @@ a {
   color: #00d1b2;
 }
 */
+#menu-nav {
+
+}
+.header {
+  width: 100%;
+}
+#navbar-nav ul {
+  border-radius: 4px;
+  overflow: hidden;
+}
+#navbar-nav li {
+  float: left;
+  width: 3dsa0%;
+}
+#navbar-nav li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navbar-nav a {
+  color: #848484;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  padding: 20px 0;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease; /*ease-in-out*/
+}
+#navbar-nav a:hover {
+  color: #e74c3c;
+  opacity: .7;
+}
+#navbar-nav a::before {
+  content: "";
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  background-color: #e74c3c;
+}
+#navbar-nav a:hover::before {
+  right: 0;
+  left: 0;
+}
+
 a:hover {
   color: #00d1b2;
   font-weight: bold;
 }
+
 #container {
   min-height: 100%;
   position: relative;
