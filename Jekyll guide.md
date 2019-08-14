@@ -53,10 +53,10 @@
 	if no bundler then:
 		gem update github-pages
 
-#Miscellanious
- #to get gem information
- bundle info jekyll
- bundle show --paths
- gem which jekyll
- gem list
- gem help commands
+## Miscellanious:
+### To get gem information
+	 bundle info jekyll
+	 bundle show --paths
+	 gem which jekyll
+	 gem list
+	 gem help commands
