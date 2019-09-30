@@ -27,6 +27,7 @@ header, #navbar-header {
   position: sticky; /* fixed */
   background-color: #093145; /* #ff0;*/
   align-content: center;
+  padding-right: 3;
 }
 
 body {
