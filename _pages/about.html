@@ -9,18 +9,29 @@ custom_js: about.css
 ---
 
 <div class="header simple-header">
-	<div class="Grid container">
-		<div id="header-text" class="Grid-cell">
-			<h1 class="large-title">About</h1>
-		</div>
-	</div>
+  <div class="Grid container">
+    <div id="header-text" class="Grid-cell">
+      <h1 class="large-title">About</h1>
+    </div>
+  </div>
 </div>
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/asciinema-player.css" />
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{{ site.baseurl }}/css/asciinema-player.css"
+/>
 <div class="section">
-	<div class="Grid container">
-		<p>This page is supposed to tell you a little more about me as if you haven't got enough already.</p>
-	</div>
-	<!--<link rel="alternate" type="application/x-asciicast" href="/images/demo.cast"> in page’s HTML):-->
-	<asciinema-player src="{{ site.baseurl }}/images/demo.cast" cols="80" rows="24"></asciinema-player>
-	<script src="{{ site.baseurl }}/js/asciinema-player.js"></script>
+  <div class="Grid container">
+    <p>
+      This page is supposed to tell you a little more about me as if you haven't
+      got enough already.
+    </p>
+  </div>
+  <!--<link rel="alternate" type="application/x-asciicast" href="/images/demo.cast"> in page’s HTML):-->
+  <asciinema-player
+    src="{{ site.baseurl }}/images/demo.cast"
+    cols="80"
+    rows="24"
+  ></asciinema-player>
+  <script src="{{ site.baseurl }}/js/asciinema-player.js"></script>
 </div>

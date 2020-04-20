@@ -4,33 +4,37 @@ notes: active
 ---
 
 <div class="notes">
-		<div class="note single">
-			<a href="{{ page.url }}"><h1 class="title">{{ page.title }}</h1></a>
-			<div class="divider"></div> <!-- Beautify it later with line breaker -->
-			<h2 class="date"><info datetime="{{ page.date }}">
-				{{ page.date | date_to_string }} {% if page.author %} by {{ page.author }} {% endif %}
-			</info></h2>
-			<!-- Post content -->
-			<div class="notebody">
-				{{ content }}
-			</div>
-			<!-- Post info -->
-			<div class="noteinfo">
-			<!-- include some categories and tags maybe? -->
-			</div>
+  <div class="note single">
+    <a href="{{ page.url }}"><h1 class="title">{{ page.title }}</h1></a>
+    <div class="divider"></div>
+    <!-- Beautify it later with line breaker -->
+    <h2 class="date">
+      <info datetime="{{ page.date }}">
+        {{ page.date | date_to_string }} {% if page.author %} by {{ page.author
+        }} {% endif %}
+      </info>
+    </h2>
+    <!-- Post content -->
+    <div class="notebody">
+      {{ content }}
+    </div>
+    <!-- Post info -->
+    <div class="noteinfo">
+      <!-- include some categories and tags maybe? -->
+    </div>
 
-			<hr>
+    <hr />
 
-			<!-- Post comments -->
-			<div class="notecomments">
-
-			</div>
-			<!--
+    <!-- Post comments -->
+    <div class="notecomments"></div>
+    <!--
 			<div id="disqus">
     		<div id="disqus_thread">
 				</div><script type="text/javascript" src="http://disqus.com/forums/git-ready/embed.js"></script>
 				<noscript><a href="http://git-ready.disqus.com/?url=ref">View the discussion thread.</a></noscript>
 				<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
   		</div> -->
-		</div><!-- / .note .single -->
-</div><!-- /.notes -->
+  </div>
+  <!-- / .note .single -->
+</div>
+<!-- /.notes -->

@@ -41,32 +41,32 @@ repos:
         args: [--format=json]
 
   #pre-commit-ruby
-  - repo: https://github.com/mattlqx/pre-commit-ruby
-    rev: v1.3.1
-    hooks:
-      - id: rubocop
-      - id: foodcritic
-      - id: cookstyle
-      - id: rspec
-      - id: chef-cookbook-version
+  #- repo: https://github.com/mattlqx/pre-commit-ruby
+  #  rev: v1.3.1
+  #  hooks:
+  #    - id: rubocop
+  #    - id: foodcritic
+  #    - id: cookstyle
+  #    - id: rspec
+  #    - id: chef-cookbook-version
 
   #pre-commit prettier
-  - repo: https://github.com/prettier/prettier
-    rev: "2.0.4" # Use the sha or tag you want to point at
-    hooks:
-      - id: prettier
-        name: prettier
-        entry: prettier --write
-        language: node
-        files: "\\.(\
-          css|less|scss\
-          |graphql|gql\
-          |html\
-          |js|jsx\
-          |json\
-          |md|markdown|mdown|mkdn\
-          |mdx\
-          |ts|tsx\
-          |vue\
-          |yaml|yml\
-          )$"
+  #  - repo: https://github.com/prettier/prettier
+  #  rev: "2.0.4" # Use the sha or tag you want to point at
+  #  hooks:
+  #    - id: prettier
+  #      name: prettier
+  #      entry: prettier --write
+  #      language: node
+  #      files: "\\.(\
+  #        css|less|scss\
+  #        |graphql|gql\
+  #        |html\
+  #        |js|jsx\
+  #        |json\
+  #        |md|markdown|mdown|mkdn\
+  #        |mdx\
+  #        |ts|tsx\
+  #        |vue\
+  #        |yaml|yml\
+  #        )$"
