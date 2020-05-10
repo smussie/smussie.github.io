@@ -5,7 +5,15 @@
 ## Requirements:
 
 - [x] Ruby > 2.2.5(ruby -v), rubygems (gem -v) , GCC
-      `bash - [x] sudo apt install bundler - [x] sudo apt install ruby ruby-dev build-essential (best to avoid installing Ruby Gems as the root user) #Therefore,we need to set up a gem installation directory for user account in ~/.bashrc - [x] echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc - [x] echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc - [x] echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc - [x] source ~/.bashrc #finally install jekyll - [x] gem install bundler jekyll`
+      ```bash
+        - [x] sudo apt install bundler
+        - [x] sudo apt install ruby ruby-dev build-essential (best to avoid installing Ruby Gems as the root user) #Therefore,we need to set up a gem installation directory for user account in ~/.bashrc
+        - [x] echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+        - [x] echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
+        - [x] echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
+        - [x] source ~/.bashrc #finally install jekyll
+        - [x] gem install bundler jekyll
+      ```
 
 ## Creating:
 
@@ -91,3 +99,9 @@ cd jekyll-website
      gem which jekyll
      gem list
      gem help commands
+
+     Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+     [jekyll-docs]: http://jekyllrb.com/docs/home
+     [jekyll-gh]:   https://github.com/jekyll/jekyll
+     [jekyll-talk]: https://talk.jekyllrb.com/

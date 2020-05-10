@@ -4,12 +4,15 @@ title: Customize Shell Prompt
 categories: [Bash]
 tags: [bash]
 ---
--------------------------
-## Table for shell prompt
+
 ---
 
-|  Sequence  | Description                                                       |     | Sequence |  Description                                                        |
-| :--------: | :----------------------------------------------------------------- | :----: | :--------: | :------------------------------------------------------------------ |
+## Table for shell prompt
+
+---
+
+|  Sequence  | Description                                                       |     | Sequence | Description                                                        |
+| :--------: | :---------------------------------------------------------------- | :-: | :------: | :----------------------------------------------------------------- |
 |     \d     | The date (+%a\ %b\ %d format) 1)                                  |     |    \v    | The version of the shell (short)                                   |
 | \D{format} | The date in the desired format (in strftime format) 2)            |     |    \w    | The path of the working directory                                  |
 |     \t     | The time, 24-hour (+%k:%M:%S format) 3)                           |     |    \W    | The name of the working directory                                  |
@@ -25,6 +28,7 @@ tags: [bash]
 |     \\     | A single backslash                                                |     | \e ,\033 | The  Escape character. Used by some Control Sequences (see bellow) |
 
 ---
+
 <!--Prompt Helper-->
 <div id="ph_prompt_helper" style="border: 3px solid rgb(192, 192, 192); padding: 0px; background: rgb(0, 0, 0); color: rgb(255, 255, 255); font-family: monospace; font-size: 9pt;">
 <div id="ph_titlebar" style="padding: 0px 0px 3px; background: rgb(192, 192, 192); color: rgb(0, 0, 0); font-family: sans-serif; font-weight: bold; min-height: 16px; overflow: hidden; white-space: nowrap;">
@@ -46,11 +50,13 @@ tags: [bash]
 
 ## Prompt Examples
 
-
 ### For system wide change
+
 - /etc/profile
 - /etc/bashrc
+
 ### For user based changes
+
 ~/.bash_profile
 ~/.bash_login
 ~/.profile
