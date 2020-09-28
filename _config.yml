@@ -1,25 +1,53 @@
 # global settings
 name: smussie
-github_username: smussie
 title: "My github page"
+email: sirak.mussie@camptocamp.com
 description: >- #this means ignore newlines until "baseurl:"
-  My adventures in coding
-#permalink: "/:title"
-permalink: pretty
-#theme: jekyll-theme-hacker
-url: "https://smussie.github.io"
+  My adventures in coding, Jekyll, HTML, CSS and JS,
+  should be fun.
+permalink: /:categories/:title
+#permalink: pretty
 #relative_permalinks: false
+#theme: jekyll-theme-hacker
+baseurl: ""
+url: "https://smussie.github.io"
+github_username: smussie
+#twitter_username:
+google_username: sirak.mussie
+
+links:
+  - title: about
+    url: /about
+  - title: WebCv
+    url: /WebCv
+  - title: posts # blogs or posts
+    url: /posts
+  - title: work
+    url: /work
 
 # Build settings
-exclude: ["script", "vendor", "Gemfile", "Gemfile.lock", "Rakefile", "README.md", "Jekyll guide.md"]
+exclude:
+  [
+    "script",
+    "vendor",
+    "Gemfile",
+    "Gemfile.lock",
+    "Rakefile",
+    "README.md",
+    "Jekyll guide.md",
+  ]
 markdown: kramdown
-#plugins:
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
 #  - jekyll-avatar
 #  - jekyll-redirect-form
 #  - jekyll-seo-tag
 #  - jekyll-coffescript
 #  - jekyll-sitemap
 #  - jekyll-octicons
+pagiante: 10
+paginate_path: "/posts/page:num/"
 kramdown:
   syntax_highlighter: rouge
   input: GFM

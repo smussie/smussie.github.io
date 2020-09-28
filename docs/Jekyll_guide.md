@@ -1,19 +1,19 @@
+---
+layout: post
+title: "My Jekyll CheatSheet"
+categories: [Cheatsheet]
+visible: false
+---
+
 # Jekyll guide
 
 [Jekyll tutorials](https://jekyllrb.com/tutorials/using-jekyll-with-bundler/)
 
 ## Requirements:
 
-- [x] Ruby > 2.2.5(ruby -v), rubygems (gem -v) , GCC
-      ```bash
-        - [x] sudo apt install bundler
-        - [x] sudo apt install ruby ruby-dev build-essential (best to avoid installing Ruby Gems as the root user) #Therefore,we need to set up a gem installation directory for user account in ~/.bashrc
-        - [x] echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
-        - [x] echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
-        - [x] echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
-        - [x] source ~/.bashrc #finally install jekyll
-        - [x] gem install bundler jekyll
-      ```
+- [x] Ruby > 2.2.5(ruby -v),
+- [x] rubygems (gem -v OR gem --version) [download gems](http://rubygems.org/pages/download) , GCC
+      `bash - [x] sudo apt install bundler - [x] sudo apt install ruby ruby-dev build-essential (best to avoid installing Ruby Gems as the root user) #Therefore,we need to set up a gem installation directory for user account in ~/.bashrc - [x] echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc - [x] echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc - [x] echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc - [x] source ~/.bashrc #finally install jekyll - [x] gem install bundler jekyll - [x] jekyll --version`
 
 ## Creating:
 
@@ -47,6 +47,7 @@ cd jekyll-website
     jekyll --version
     gem list jekyll
     gem outdated (to check if you have the latest version)
+    gem update $(gem outdated | cut -d ' ' -f 1) __to update outdated gems__
     bundle update jekyll
     gem update jekyll
 

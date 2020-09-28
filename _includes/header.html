@@ -1,85 +1,88 @@
 <!-- Main Navigation -->
-<header class="header">
-    <!--Navbar-->
 
-    <nav class="navbar navbar-expand-lg blue-gray navbar-fixed-top navbar-header">
+<!--Navbar-->
+<div class="navbar blue-gray navbar-fixed-top navbar-header navbar-expand-lg"> <!-- navbar-header navbar-expand-lg  -->
       <!--navbar-fixed-top to make it fixed -->
-      <h1><a class="brand-logo Icon Icon--logo Icon--large" href="{{ site.baseurl }}/">M.Sirak</a></h1>
-      <!-- Collapse button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <!--
-      <style>
-        .topmenu ul li.active a, .topmenu ul li a:hover {
-        text-decoration:none;
-        color:#fff;
-        /*background:url(../images/menu_a.jpg) no-repeat center top;*/
-        }
-      </style>
-    -->
-      <script type="text/javascript">
-        $(function() {
-            // this will get the full URL at the address bar
-            var url = window.location.href;
+      <!--<div class="container">-->
+        <div class="navbar-header">
+          <!-- Collapse button
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <!--<span class="sr-only">Toggle Navigation</span>-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1>
+            <a class="navbar-brand brand-logo Icon logo Icon--logo navbar-right" href="{{ '/' | relative_url }}">
+               <span class="sr-only">Smussie</span>
+               <img src="{{ '/images/logo/my_logo.png' | relative_url }}" width="140" height="65" alt="My Logo">
+            </a>
+          </h1>
+          <!--<a class="navbar-brand brand-logo Icon Icon--logo Icon--large" href="{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}/images/logo/my_logo.png" alt="smussie">
+          </a>-->
+        </div>
+        <script type="text/javascript">
+          $(function() {
+              // this will get the full URL at the address bar
+              var url = window.location.href;
 
-            // passes on every "a" tag
-            $(".topmenu a").each(function() {
-                // checks if its the same on the address bar
-                if (url == (this.href)) {
-                    $(this).closest("li").addClass("active");
-                    //for making parent of submenu active
-                   $(this).closest("li").parent().parent().addClass("active");
-                }
+              // passes on every "a" tag
+              $(".topmenu a").each(function() {
+                  // checks if its the same on the address bar
+                  if (url == (this.href)) {
+                      $(this).closest("li").addClass("active");
+                      //for making parent of submenu active
+                     $(this).closest("li").parent().parent().addClass("active");
+                  }
+              });
             });
-          });
-      </script>
-      <!-- Collapsible content -->
-      <div class="collapse navbar-collapse" id="navbar-nav">
+        </script>
+        <!-- Collapsible content -->
+        <div class="navbar-collapse collapse " > <!--id="navbar-nav" -->
 
-          <!-- Links -->
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                  <a class="nav-link fa fa-home" href="{{ site.baseurl }}/">Home
-                      <span class="sr-only">(current)</span>
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="{{ site.baseurl }}/posts">my posts</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-              </li>
+            <!-- Links -->
+            <ul class="nav navbar-nav navbar-right" > <!--mr-auto" -->
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.baseurl }}/posts">POSTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ site.baseurl }}/about">ABOUT</a>
+                </li>
 
-              <!-- Dropdown -->
-              <li class="nav-item blue-gray dropdown">
-                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WebCv</a>
-                  <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item nav-link" href="{{ site.baseurl }}/WebCv">MonCV</a>
-                      <a class="dropdown-item nav-link" href="/rss">rss</a>
-                      <a class="dropdown-item nav-link" href="WebCv/competences">Compétences</a>
-                      <a class="dropdown-item nav-link" href="WebCv/experiences">Experiences</a>
-                      <a class="dropdown-item nav-link" href="WebCv/formations">Formations</a>
-                      <a class="dropdown-item nav-link" href="WebCv/hobbies">Hobbies</a>
-                      <a class="dropdown-item nav-link" href="WebCv/contact">Contact</a>
-                  </div>
-              </li>
+                <!-- Dropdown -->
+                <li class="nav-item blue-gray dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WebCv</a>
+                    <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item nav-link" href="{{ site.baseurl }}/WebCv">MonCV</a>
+                        <a class="dropdown-item nav-link" href="/rss">rss</a>
+                        <a class="dropdown-item nav-link" href="{{ site.baseurl }}/WebCv/competences">Compétences</a>
+                        <a class="dropdown-item nav-link" href="{{ site.baseurl }}/WebCv/experiences">Experiences</a>
+                        <a class="dropdown-item nav-link" href="{{ site.baseurl }}/WebCv/formations">Formations</a>
+                        <a class="dropdown-item nav-link" href="{{ site.baseurl }}/WebCv/hobbies">Hobbies</a>
+                        <a class="dropdown-item nav-link" href="{{ site.baseurl }}/WebCv/contact">Contact</a>
+                    </div>
+                </li>
 
-          </ul>
-          <!-- Links -->
-          <!-- search bar -->
-          <form class="form-inline navbar-form  navbar-left">
-              <div class="md-form mt-0 input-group">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <!--  <input type="search" placeholder="Search..." role="textbox" aria-label="Search textbox" -->
-                  <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
-                      <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                  </div>
-              </div>
-          </form>
+            </ul>
+            <!-- Links -->
+            <!-- search bar -->
+            <form class="form-inline navbar-form  navbar-left">
+                <div class="md-form mt-0 input-group">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                  <!--  <input type="search" placeholder="Search..." role="textbox" aria-label="Search textbox" -->
+                    <div class="input-group-btn">
+                      <button class="btn btn-default" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </div>
+                </div>
+            </form>
+        </div>
       </div>
 
-</header>
+</div>

@@ -3,37 +3,42 @@ layout: default
 notes: active
 ---
 
-<div class="notes">
+<div class="post">
   <div class="note single">
-    <a href="{{ page.url }}"><h1 class="title">{{ page.title }}</h1></a>
+    <a href="{{ page.url }}">
+      <h1 class="post-title">{{ page.title | escape }}</h1>
+    </a>
     <div class="divider"></div>
     <!-- Beautify it later with line breaker -->
-    <h2 class="date">
+    <p class="post-meta">
       <info datetime="{{ page.date }}">
-        {{ page.date | date_to_string }} {% if page.author %} by {{ page.author
-        }} {% endif %}
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {% if page.author %} • <span class="p-author" itemprop="name">{{ page.author | escape }} </span>
+        {% endif %}
+        {% if page.meta %} • {{ page.meta }}
+        {% endif %}
       </info>
-    </h2>
+    </p>
     <!-- Post content -->
-    <div class="notebody">
+    <article class="post-content">
       {{ content }}
-    </div>
+    </article>
     <!-- Post info -->
-    <div class="noteinfo">
+    <div class="post-info">
       <!-- include some categories and tags maybe? -->
     </div>
 
     <hr />
 
     <!-- Post comments -->
-    <div class="notecomments"></div>
-    <!--
-			<div id="disqus">
-    		<div id="disqus_thread">
-				</div><script type="text/javascript" src="http://disqus.com/forums/git-ready/embed.js"></script>
-				<noscript><a href="http://git-ready.disqus.com/?url=ref">View the discussion thread.</a></noscript>
-				<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-  		</div> -->
+    <div class="post-comments">
+      {%- if site.disqus.shortname -%}
+        {%- include disqus_comments.html -%}
+      {%- endif -%}
+    </div>
   </div>
   <!-- / .note .single -->
 </div>
